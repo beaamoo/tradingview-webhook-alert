@@ -3,8 +3,8 @@ from chalice import Chalice
 
 app = Chalice(app_name='tradingview-webhook-alert')
 
-API_KEY = 'PKOOLJAMYKF4WNY6MYD2'
-SECRET_KEY = 'emMXDK7zhuMxam0HhQpoKoWT6s4Y1ntsKCmqxMzy'
+API_KEY = [YOUR_API_KEY] # change this value with your alpaca key
+SECRET_KEY = [YOUR_SECRET_KEY]# change this value with your alpaca secret key
 BASE_URL = "https://paper-api.alpaca.markets"
 ORDERS_URL = "{}/v2/orders".format(BASE_URL)
 HEADERS = {'APCA-API-KEY-ID': API_KEY, 'APCA-API-SECRET-KEY': SECRET_KEY}
